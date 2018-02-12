@@ -1,0 +1,22 @@
+Word Game:
+
+
+This is a medium level difficulty question which is made fully using Javascript
+
+Here we are going to play a word game with the computer....Seems interesting right!!!!!
+
+The game is simple....Each player during their turns, they have to frame a word using the ending letter of the word formed by the opponent. And the player starts the game.
+
+Here, the javascript code plays a major role in giving the clue for the participants.
+
+If you analyse the javascript code carefully, you can get the get the answer in two ways:
+
+1)   Make the computer frame the words starting with the characters {'a', 'e', 'i', 'm', 'q', 'u', 'y'} and you will get the flag
+
+
+2)   The other way to get the answer is that, if you send a GET request to the php file 'answer_5a.php' with the query string 'value=aeimquy'   you will get the answer for this challenge.
+
+Eg:      http://10.10.79.8/source_code/php_files/answer_5a.php?value=aeimquy
+
+
+As simple as that!!!!!

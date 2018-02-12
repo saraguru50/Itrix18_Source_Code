@@ -1,0 +1,23 @@
+Hyperlink Cycle: (Level 1)
+
+
+This is an interesting question which makes use of the hyperlinks formed by the <a> tags of html.
+
+First, the clue is given in the source code of the challenge-4 web page.
+
+There is a cycle that is provided in the source code of the web page.
+
+The task is so simple. The user has to identify the nodes of the cycle and visit them in order to form the cycle and get the answer.
+
+Each hyperlink of the challenge-4 web page will have the hyperlinks to all the nodes of the hyperlink graph
+
+The given clue in the source code is,
+
+3v1f  ->  3n0  ->  ru0f  ->  0wt  -> 33rht  -> x15   -> 3v1f
+
+Map the given nodes to the numbers by reading them in the reverse order and you will get the following sequence of nodes forming the hyperlink cycle.
+
+
+five  ->  one  ->  four  ->  two  -> three  -> six   -> five
+
+As simple as that!!!!!

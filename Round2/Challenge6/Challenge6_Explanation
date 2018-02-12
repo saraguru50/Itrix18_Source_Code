@@ -1,0 +1,21 @@
+Hyperlink cycle: (Level 2)
+
+
+This is an algorithmic and a famous graph theory question.
+
+The task is so simple..We have to find if the given undirected graph contains any odd length cycle or not
+
+In other words, we have to check if the graph is bipartite graph or not.
+
+This is a graph coloring problem. Start colouring the nodes of the graph with two colours '1' and '0'. 
+
+If any two adjacent nodes have the same color ('1','1') or ('0','0'), then we can conclude that the given graph has an odd length cycle.
+
+The coloring of the nodes can be done in a single dfs and so the overall time complexity is O(n + m) where n and m are the number of nodes and edges in the given undirected graph respectively.
+
+The answer for this challenge is nothing but the md5sum of the output of the program.
+
+Eg:    cat Challenge6_Testcases | ./exec_file | md5sum
+
+
+As simple as that!!!!!

@@ -1,0 +1,15 @@
+Reverse It: (Level 1)
+
+This is a source code reversing challenge :):)
+
+Here a C++ program is given and we have to figure out the correct input that has to be provided for the program, to get the answer for this challenge.
+
+The logic of this program is quite simple.
+
+Take the number '42673239' that is checked in the if condition in the given C++ program. Swap the adjacent bits in the binary representation of the above number. ie) (swap 0th bit and 1st bit, 2nd bit and 3rd bit, ........ 30th bit and 31st bit)
+
+The resulting number is an interesting number, 21436587
+
+Execute the given C++ program and supply input as 21436587 and you will get the answer :):)
+
+As simple as that!!!!!

@@ -1,0 +1,23 @@
+Reverse It :):) (Level 2)
+
+
+This challenge is similar to the challenge2 where we tried to reverse the given C++ Program.
+
+Here in addition to reversing, we have to first deobfuscate the given code to get the logic of the program.
+
+The logic of the program is quite simple. 
+
+Take the string given in the if condition, 'xsetczrwlcpsatncldplndfzxlqpsedtdtse'
+
+Reverse the above string.
+
+Shift each of the character in the above reversed string to 15 characters. ie) 'x' + 15 = 'm', 's' + 15 = 'h' and so on
+
+The final string that you will get is an interesting string :):)
+
+'Thisisthefamouscaesarcipheralgorithm'
+
+Execute the given C++ Program and give input as the above string and you will get the answer :):)
+
+
+As simple as that!!!!!!

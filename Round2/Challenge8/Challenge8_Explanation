@@ -1,0 +1,34 @@
+JPEG Recovery:
+
+
+This is the hardest question of the contest :):)
+
+Here you are given two image files.. One is a normal JPG file and the other one is a corrupted JPG file which has the answer for the challenge.
+
+Let's try to analyse the binary data of the two given image files..
+
+The image file is corrupted and this may happen due to change in the signature bytes of the image file..
+
+So, lets analyse the signature bytes of the given image files...
+
+The corrupted JPG image file's first few signature bytes are:
+
+    0000 0000 0010 0111 0000 0000 0001 1111 1111 1111
+
+The normal JPG image file's first few signature bytes are:
+
+    1111 1111 1101 1000 1111 1111 1110 0000 0000 0000
+    
+The entire clue is visible from the signature bytes of both the image files :):)
+
+The entire corrupted image file is just complemented....ie) ('1' became '0' and '0' became '1')
+
+So, lets write a python script and read byte by byte from the corrupted image file. Let's complement each byte and then write it in a new image file to get the answer for this challenge......
+
+As simple as that!!!!!
+
+    
+
+
+
+
