@@ -1,6 +1,6 @@
-x = open('challenge8_flag.jpg','rb')
+x = open('Corrupted.jpg','rb')
 
-y = open('challenge8_flag_invert.jpg','wb')
+y = open('Challenge8_Answer.jpg','wb')
 
 byte = x.read(1)
 
