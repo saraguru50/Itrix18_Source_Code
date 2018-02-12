@@ -1,0 +1,31 @@
+Input format:
+
+		First line contains a single integer T (<= 50) which denotes the number of test cases.
+		For each test case, 
+				The first line contains two integers n (<= 50) and m (<= 50) which denotes the number of nodes and number of edges in the graph respectively.
+
+				Next m lines contains two integers u (<= n) and v (<= n) denoting an undirected edge between the two nodes 'u' and 'v'.
+
+Output format:
+		
+		For each test case, print "YES" if there is an odd length cycle and "NO" if there is no odd cycle in the graph in a new line.
+
+
+Sample input:
+
+2
+3 3
+1 2
+2 3
+3 1
+
+4 4
+1 2
+2 3
+3 4
+4 1
+
+Sample Output:
+
+YES
+NO
