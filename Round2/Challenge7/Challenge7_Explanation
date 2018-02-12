@@ -1,0 +1,15 @@
+Execute It:
+
+This is a simple reverse engineering task.
+
+You are given an executable file named 'exec' and you have to try to get the flag from the executable file.
+
+The first unix command that comes to our mind when we speak about reverse engineering is the 'strings' command.
+
+Yes..thats it...Type 'strings exec' and you will get the answer for the challenge.
+
+
+
+(Note:  strings command will display all the strings present in your program like 
+
+printf("Hello World"); cout << "Welcome";  etc...)
